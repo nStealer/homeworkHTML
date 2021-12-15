@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>RFG</title>
+
+<style>
+.title {
+  height: 150px;
+  border: 5px outset #72AD60;
+  background-color: #9EDB8B;    
+  text-align: center;
+  font-family: forte;
+  font-size: 30px;
+}
+#logo {
+  position: absolute;
+  left: 150px;
+  top: 15px;
+}
+.title.h1 {
+  position: fixed;
+  left: 770px;
+}
+.menu {
+  width: 10%;
+  height: 800px;
+  padding: 0.5%;
+  background-color: #9EDB8B;
+  font-family: arial;
+  font-size: 12pt;
+  float: left;
+}
+.news {
+  width: 5%;
+  height: 800px;
+  padding: 0.5%;
+  background-color: #9EDB8B;
+  font-family: Arial;
+  float: right;
+}
+.content {
+  width: 82%;
+  height: 800px;
+  padding: 0.5%;
+  background-color: #D5FFCA;
+  float: left;
+  }
+.footer {
+  clear: both;
+  text-align: center;
+  font-family: Arial;
+  font-size: 10pt;
+  padding: 0.5%;
+  background-color: #9EDB8B;
+  border: 1px outset #72AD60;
+}
+ul li
+{
+	position:relative;
+}
+li ul
+{
+	position:absolute;
+	top:0px;
+	left:138px;
+	display:none;
+}
+ul
+{
+	padding:0px;
+	margin:0px;
+	list-style-type:none;
+}
+li:hover ul
+{
+	display:block;
+}
+a
+{
+	text-decoration: none;
+	color:black;
+	background-color: #B5FFA2;
+	display:block;
+	width:120px;
+	padding:8px;
+	border:1px solid #D5FFCA;
+}
+a:hover
+{
+	background:#b7eaee;
+	color:black;
+}
+@font-face {
+  font-family: Balgeris;
+  src: url(Balgeris.ttf);
+}
+</style>
+
+</head>
+
+<body>
+
+<div id="conteiner">
+
+<div class="title">
+<h1 style="font-weight:normal; text-shadow: 3px 3px #6DA15F;">Royal Family's Gardens</h1>
+
+
+  <svg id="logo" width="210" height="145">
+  
+  <defs>
+  
+  <radialGradient id="grad1" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" style="stop-color:rgb(178,255,102);
+      stop-opacity:1" />
+      <stop offset="100%" style="stop-color:rgb(102,204,0);stop-opacity:1" />
+    </radialGradient>
+	
+  <filter id="shadow" x="0" y="0" width="200%" height="200%">
+      <feOffset result="offOut" in="SourceGraphic" dx="20" dy="20" />
+      <feColorMatrix result="matrixOut" in="offOut" type="matrix"
+      values="0.2 0 0 0 0 0 0.2 0 0 0 0 0 0.2 0 0 0 0 0 1 0" />
+      <feGaussianBlur result="blurOut" in="matrixOut" stdDeviation="10" />
+      <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
+    </filter>
+	
+  </defs>
+
+  <ellipse cx="90" cy="60" rx="80" ry="45" filter="url(#shadow)" fill="url(#grad1)"/>
+  <text fill="#000000" font-size="50" font-family="forte" x="47" y="77">RFG</text>
+  </svg>
+
+</div>
+
+
+
+<div class="menu">
+
+<ul>
+<li><a href="#">За фирмата</a>
+        <ul>
+			<li><a href="C:\Users\Petya\OneDrive\Работен плот\Уни\Партньори.html" target="iframe_a">Партньори</a></li>
+			
+                        <li><a href="Развитие.html" target="iframe_a">Развитие</a></li>
+		</ul>
+</li>
+<li><a href="#">За собственика</a>	
+        <ul>	
+			<li><a href="Филм.html" target="iframe_a">Филм</a></li>
+			<li><a href="Музика.html" target="iframe_a">Музика</a></li>
+		</ul>
+</li>
+<li><a href="Услуги.html" target="iframe_a">Услуги</a></li>
+<li><a href="Поръчки.html" target="iframe_a">Поръчки</a></li>
+<li><a href="Мнения.html" target="iframe_a">Мнения</a></li>
+<li><a href="Работа.html" target="iframe_a">Работа</a></li>
+</ul>
+</div>
+
+<div class="content">
+<iframe width="100%" height="100%" name="iframe_a" frameBorder="0"></iframe>
+</div>
+
+<div class="news">
+<b>Новини</b>
+</div>
+
+<div class="footer">
+Петя Минчева
+</div>
+
+</div>
+</body>
+
+</html>
