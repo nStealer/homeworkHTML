@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+
+<style>
+fieldset {
+  background-color: #eeeeee;
+}
+
+legend {
+  background-color: gray;
+  color: white;
+  padding: 5px 10px;
+}
+
+input {
+  margin: 5px;
+}
+</style>
+
+<title>Мнения</title>
+
+</head>
+
+<body>
+
+
+<form action="">
+<fieldset>
+<legend>Анкета</legend>
+  <br>Моля, изберете и маркирайте.<br>
+  Аз съм:<br><br>
+  <input type="radio" id="unsatisfied" name="rating" value="unsatisfied">
+  <label for="male">Крайно недоволен</label><br><br>
+  <input type="radio" id="half satisfied" name="rating" value="half satisfied">
+  <label for="female">Почти доволен</label><br><br>
+  <input type="radio" id="almost" name="rating" value="almost">
+  <label for="male">Доволен, но има какво да се желае</label><br><br>
+  <input type="radio" id="satisfied" name="rating" value="satisfied">
+  <label for="female">Доволен</label><br><br>
+  <input type="radio" id="happy" name="rating" value="happy">
+  <label for="male">Щастлив</label><br><br>
+  <input type="radio" id="would recommend" name="rating" value="would recommend">
+  <label for="female">Абсолютно удовлетворен/бих препоръчал на познати</label><br>
+</form>
+</fieldset>
+
+<fieldset>
+<legend>Мнение</legend>
+ <br>Вашето мнение е важно за нас!<br>
+ Моля, споделете на база на какво се дължи вашата удовлетвореност/неудовлетвореност:<br><br>
+  <textarea name="message" style="width:300px; height:100px;"></textarea>
+  <br>
+</fieldset>
+
+<fieldset>
+<legend>Персонална информация</legend>
+  <br>(По желание)<br>
+  В случай, че искате да установите връзка с наш представител след попълването на анкетата относно нивото на удовлетвореност от нашите услуги. <br>Моля попълнете полето с лична информация и до няколко часа ще Ви бъде върнат E-mail с отговор на вашите оплаквания/похвали.<br><br>
+  <label for="fname">Име:</label>
+  
+  <input type="text" id="fname" name="fname"><br><br>
+  <label for="lname">Фамилия:</label>
+  <input type="text" id="lname" name="lname"><br><br>
+  
+  <label for="email">E-mail:</label>
+  <input type="email" id="email" name="email"><br><br>
+  
+  <label for="mnumber">Тел. за връзка:</label>
+  <input type="number" id="mnumber" name="mnumber"><br><br>
+  <input type="submit" value="Изпращане">
+</form>
+
+
+</body>
+
+</html>
